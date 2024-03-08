@@ -25,8 +25,10 @@ from model import Transformer
 try:
     import lm_eval
     lm_eval_available = True
+    print("lm_eval is availale.")
 except:
     lm_eval_available = False
+    print("lv_eval is not available.")
 
 from generate import _load_model, encode_tokens, model_forward
 
