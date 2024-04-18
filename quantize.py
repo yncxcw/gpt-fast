@@ -533,6 +533,7 @@ def quantize(
 ) -> None:
     assert checkpoint_path.is_file(), checkpoint_path
 
+    # Why CPU ? shouldn't this GPU.
     device = 'cpu'
     precision = torch.bfloat16
 
